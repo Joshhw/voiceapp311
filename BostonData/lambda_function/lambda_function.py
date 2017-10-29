@@ -9,7 +9,7 @@ Boston address, which is provided in a slot.
 from __future__ import print_function
 from streetaddress import StreetAddressFormatter, StreetAddressParser
 import requests
-from .lambda_core.shared_lambda_functions import build_speechlet_response, build_response
+from .lambda_core.alexa_general import build_speechlet_response, build_response, on_session_started
 
 def lambda_handler(event, context):
     """
